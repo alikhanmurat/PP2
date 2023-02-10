@@ -1,5 +1,11 @@
 def histogram(x):
     for i in x:
-        print ('*' * i)
+        print('*' * i)
 
-histogram([4, 9, 7])
+y = int(input())
+thislist = []
+for i in range(y):
+    z = int(input())
+    thislist.append(z)
+  
+histogram(thislist)
