@@ -78,6 +78,6 @@ movies = [
 
 def sublist():
     for i in movies:
-        if i["imdb"] >= 5.5:
+        if i["imdb"] > 5.5:
             print(i)
 sublist()
