@@ -76,8 +76,12 @@ movies = [
 }
 ]
 
-def highscore(movie):
-    return movie["imdb"] > 5.5
+def highscore(x):
+    for i in movies:
+        if (x == i["name"]):
+            if (i["imdb"] > 5.5):
+                return True
+            return False
 
-for movie in movies:
-    print(highscore(movie))
+x = input()
+print(highscore(x))
